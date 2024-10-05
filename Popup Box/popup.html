@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale+1.0">
+        <title>Mouse leave Popup - Easy Tutorials</title>
+        <link rel="stylesheet" href="css/popupstyle.css">
+        
+        <script>
+            let modelBox = document.getElementById("modelBox");
+            document.onmouseleave = function(){
+                modelBox.style.display = "block";
+            }
+
+            function closeModel(){
+                modelBox.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container"></div>
+        
+        <div id="modelBox">
+            <img src="images/heart.png" width="100%">
+            <div class="offer-text">
+                <h2>Get 15% OFF</h2>
+                <small>On all Beauty Products</small>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <img src="images/close.png" class="close-icon" onclick="closeModel()">
+        </div>
+        
+    </body>
+</html>
